@@ -1,0 +1,693 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+  
+/* ------ Media Query ------ */
+@media (max-width: 2561px) {
+    html,body {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;  
+    }
+}
+section {
+    background-image: url(images/heros-bg-2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 670px;
+    position: relative;
+}
+/* ------ Media Query ------ */
+@media screen and (min-width: 2000px) and (max-width: 2561px) {
+    section {
+        width: 100%;
+        height: 1000px;
+    }
+}
+
+section .waves {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+section .overlay  {
+    
+}
+
+nav {
+    top: 0;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    transition: background-color 1s ease;
+    background-color: rgba(0, 0, 0, 0.8);
+    
+}
+.white {
+    top: 0;
+    background-color: #000000;
+    z-index: 999; 
+}
+/* Navbar Brand Logo */
+.navbar-brand label {
+    color: #fff;
+    font-weight: 700;
+    font-size: 24px;
+    white-space: nowrap;
+    line-height: 100px;
+    padding-left: 180px;
+    letter-spacing: -3px;
+}
+/* ------ Media Query ------ */
+@media screen and (min-width: 2000px) and (max-width: 2561px) {
+    .navbar-brand label {
+        padding-left: 650px;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 1024px) {
+    .navbar-brand label {
+        padding-left: 50px;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 992px) {
+    .navbar-brand label {
+        line-height: 60px;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 768px) {
+    .navbar-brand label {
+        padding-left: 20px;
+    }
+}
+.navbar-brand label span {
+    color: #d1002c;
+}
+
+nav ul {
+    float: right;
+    margin-right: 220px;
+    list-style-type: none;
+    transition: color 0.3s ease;
+}
+/* ------ Media Query ------ */
+@media screen and (min-width: 2000px) and (max-width: 2561px) {
+    nav ul {
+        margin-right: 500px;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 1024px) {
+    nav ul {
+        margin-right: 30px;
+    }
+}
+nav ul li {
+    display: inline-block;
+    line-height: 100px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 13px
+    font-weight: 600;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 1 !important;
+}
+.active > a {
+    color: #d1002c;
+}
+nav ul li a:hover {
+    color: #d1002c;
+}
+
+                                    /*  Our Work Section */
+/*  Section Top Waves Part */
+.works-wave {
+    width: 100%;
+}
+/* Our Work Part */
+.our-work-section {
+    width: 100%;
+    height: 3700px;
+    margin-top: 100px;
+    background: #fff !important;
+    z-index: 0;
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 768px) {
+    .our-work-section {
+        width: 100%;
+        height: 6100px;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 426px) {
+    .our-work-section {
+        width: 100%;
+        height: 6350px;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 321px) {
+    .our-work-section {
+        width: 100%;
+        height: 6450px;
+    }
+}
+/* Main Heading */
+.our-work-section h2 {
+    margin-top: -20px;
+    font-size: 36px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem !important;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+/* First Portfolio Part */
+.web-design {
+    display: flex;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+/* ------ Media Query ------ */
+@media screen and (min-width: 2000px) and (max-width: 2561px) {
+    .web-design {
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (min-width: 1400px) and (max-width: 1441px) {
+    .web-design {
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 1024px) {
+    .web-design {
+        margin-left: 50px;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 768px) {
+    .web-design {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-left: 30px;
+    }
+}
+/* Main Image */
+.web-image img {
+    width: 400px !important;
+    height: 550px !important;
+    margin-right: 60px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 768px) {
+    .web-image img {
+        width: 708px !important;
+        height: 550px !important;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 426px) {
+    .web-image img {
+        width: 365px !important;
+        height: 550px !important;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 412px) {
+    .web-image img {
+        width: 350px !important;
+        height: 550px !important;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 376px) {
+    .web-image img {
+        width: 315px !important;
+        height: 550px !important;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 321px) {
+    .web-image img {
+        width: 260px !important;
+        height: 550px !important;
+    }
+}
+/* Mian Text */
+.web-text {
+    margin-top: 120px;
+}
+.web-text span {
+    display: block;
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #000000;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.web-text h2 {
+    font-size: 40px;
+    display: inline-block;
+    line-height: 1.3;
+    letter-spacing: 2px;
+    font-weight: 400;
+    text-transform: none;
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 426px) {
+    .web-text h2{
+        font-size: 30px;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 321px) {
+    .web-text h2{
+        font-size: 22px;
+    }
+}
+.web-text h2 a {
+    color: rgba(0, 0, 0, 0.8);
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+.web-text p {
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #a0a0b4;
+    margin-bottom: 30px;
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 426px) {
+    .web-text p br  {
+        display: none;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 426px) {
+    .web-text p  {
+        margin-right: 60px;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 376px) {
+    .web-text p  {
+        margin-right: 50px;
+    }
+}
+/* Person Information Part */
+.web-person {
+    display: flex;
+    margin-bottom: 20px;
+}
+/*  Person Image */
+.person-image img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+/* Person Text */
+.person-text h4 {
+    font-size: 16px;
+    color: black;
+    line-height: 1.5;
+    font-weight: 400;
+}
+/* Button Part */
+.web-button a {
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+    border: 1px solid #d9d9e1;
+    padding: 7px 10px;
+    border-radius: 5px;
+}
+
+/* Second Portfolio Part */
+.web-design-second {
+    
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 768px) {
+    .web-design-second  {
+        display: flex;
+        order: -1;
+    }
+}
+/* Text */
+.web-design-second .web-design .web-text {
+    text-align: right;
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 768px) {
+    .web-design-second .web-design .web-text {
+        text-align: left;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 426px) {
+    .web-design-second .web-text p  {
+        
+    }
+}
+/* Person */
+.web-design-second .web-person {
+    margin-left: 273px;
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 768px) {
+    .web-design-second .web-person {
+        margin-left: 0px;
+    }
+}
+/* Second Portfolio Main Image */
+.web-design-second .web-image {
+    margin-left: 60px;
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 768px) {
+    .web-design-second .web-image {
+        display: flex;
+        order: -1;
+        margin-left: 0px;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 768px) {
+    .web-design-second .web-image img {
+        margin-left: 0px;
+    }
+}
+
+
+/*  Work Section Bottom Waves Part */
+.work-bottom-waves {
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    rotate: 180deg;
+    z-index: 0;
+}
+
+
+.our-work-section {
+    display: flex; /* Enable Flexbox */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    width: 100%;
+    height: auto; /* Adjust height dynamically */
+    margin: 0 auto; /* Center the section within its container */
+    background: #fff !important;
+    padding: 50px 20px; /* Add padding for spacing */
+    z-index: 0;
+    text-align: center; /* Center-align text */
+}
+
+/* Center the heading */
+.our-work-section h2 {
+    margin-top: 0;
+    font-size: 36px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+/* Center the portfolio items */
+.web-design {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Add spacing between items */
+    margin-top: 50px;
+}
+
+/* Portfolio item styling */
+.web-design .web-image img {
+    width: 400px;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .web-design {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center;
+    }
+
+    .web-design .web-image img {
+        width: 100%; /* Make images responsive */
+        height: auto;
+    }
+}
+
+                                           /* Footer Section */
+ /* Footer Part */
+ .footer-section {
+    width: 100%;
+    height: 500px;
+    background-color: black;
+}
+/* ------ Media Query ------ */
+@media screen and (min-width: 2000px) and (max-width: 2561px) {
+    .footer-section {
+        margin-top: -80px;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (min-width: 1400px) and (max-width: 1440px) {
+    .footer-section {
+        margin-top: -10px;
+    }
+}
+/* ------ Media Query ------ */
+@media (max-width: 426px) {
+    .footer-section {
+        width: 100%;
+        height: 1200px;
+        margin-top: -20px;
+    }
+}
+
+/* First Colums */
+.footer-section .first-text {
+    float: left;
+}
+/* ------ Media Query ------ */
+@media (min-width: 2000px) and (max-width: 2561px) {
+    .footer-section .first-text {
+        margin-left: 550px;
+    }
+}
+/* ------ Media Query ------ */
+@media (min-width: 1400px) and  (max-width: 1441px) {
+    .footer-section .first-text {
+        margin-left: 120px;
+    }
+}
+/* ------ Media Query ------ */
+@media (max-width: 1024px) {
+    .footer-section .first-text {
+        margin-left: -120px;
+    }
+}
+/* ------ Media Query ------ */
+@media (max-width: 768px) {
+    .footer-section .first-text {
+        margin-left: -122px;
+    }
+}
+/* ------ Media Query ------ */
+@media (max-width: 426px) {
+    .footer-section .first-text {
+        float: none;
+        margin-left: -158px;
+    }
+}
+.footer-section .first-text h2 {
+    font-family: "Abril Fatface", times, serif;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    padding-top: 110px;
+    padding-left: 220px;
+}
+.footer-section .first-text p {
+    color: rgba(255, 255, 255, 0.7);
+    
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+    padding-left: 220px;
+    padding-top: 30px;
+    margin-bottom: 1rem;
+}
+/* Second Colums */
+.footer-section .second-text {
+    float: left;
+}
+/* ------ Media Query ------ */
+@media (max-width: 426px) {
+    .footer-section .second-text {
+        float: none;
+    }
+}
+.footer-section .second-text h2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+    padding-top: 120px;
+    padding-left: 170px;
+    margin-bottom: 25px;
+    font-family: "Playfair Display", serif;
+}
+/* ------ Media Query ------ */
+@media (max-width: 768px) {
+    .footer-section .second-text h2 {
+        padding-left: 50px;
+    }
+}
+.footer-section .second-text .list-link {
+   font-size: 16px;
+    list-style: none;
+    line-height: 1.8;
+    padding-left: 170px;
+    padding-top: 0px;
+    margin-bottom: 10px;
+}
+/* ------ Media Query ------ */
+@media (max-width: 768px) {
+    .footer-section .second-text .list-link {
+        padding-left: 50px;
+    }
+}
+.footer-section .second-text .list-link a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+}
+
+/* Third Colums */
+.footer-section .third-text {
+    float: left;
+}
+/* ------ Media Query ------ */
+@media (max-width: 426px) {
+    .footer-section .third-text {
+        float: none;
+    }
+}
+.footer-section .third-text h2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    padding-top: 120px;
+    padding-left: 100px;
+    margin-bottom: 25px;
+    font-family:  "Playfair Display", serif;
+}
+/* ------ Media Query ------ */
+@media (max-width: 768px) {
+    .footer-section .third-text h2 {
+        padding-left: 50px;
+    }
+}
+.footer-section .third-text .list-link-third {
+    font-size: 16px;
+     list-style: none;
+     line-height: 1.8;
+     padding-left: 100px;
+     padding-top: 0px;
+     margin-bottom: 10px;
+ }
+ /* ------ Media Query ------ */
+@media (max-width: 768px) {
+    .footer-section .third-text .list-link-third {
+        padding-left: 50px;
+    }
+}
+ .footer-section .third-text .list-link-third a {
+     text-decoration: none;
+     color: rgba(255, 255, 255, 0.5);
+     font-weight: 400;
+ }
+
+/* Fourth Colums */
+.footer-section .fourth-text {
+    float: left;
+}
+/* ------ Media Query ------ */
+
+.footer-section .fourth-text h2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    padding-top: 120px;
+    padding-left: 100px;
+    margin-bottom: 25px;
+    font-family: "Playfair Display", serif;
+}
+/* ------ Media Query ------ */
+@media (max-width: 768px) {
+    .footer-section .fourth-text h2 {
+        padding-left: 50px;
+    }
+}
+.footer-section .fourth-text .list-link-fourth {
+    font-size: 16px;
+     list-style: none;
+     line-height: 1.8;
+     padding-left: 100px;
+     padding-top: 0px;
+     margin-bottom: 10px;  
+ }
+  /* ------ Media Query ------ */
+@media (max-width: 768px) {
+    .footer-section .fourth-text .list-link-fourth {
+        padding-left: 50px;
+    }
+}
+ .footer-section .fourth-text .list-link-fourth a {
+     text-decoration: none;
+     color: rgba(255, 255, 255, 0.5);
+     font-weight: 400;
+ }
+
+.footer-section p {
+    float: none;
+}

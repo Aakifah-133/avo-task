@@ -1,0 +1,31 @@
+/* Patch for index.css improvements */
+
+/* 1. Remove duplicate universal selector */
+/* Remove one of the duplicate * { margin: 0; padding: 0; } */
+
+/* 2. Fix absolute path in section background-image */
+/* Change from:
+section {
+    background-image: url("C:\Users\HP ProBook\Desktop\avo task 2\images\heros-bg-1.webp");
+}
+To:
+section {
+    background-image: url("./images/heros-bg-1.webp");
+}
+*/
+
+/* 3. Consolidate media queries */
+/* Merge media queries for max-width: 2561px and min-width: 2000px to max-width: 2561px */
+
+/* 4. Group repeated selectors */
+/* Group navbar-brand label padding-left media queries */
+/* Group heros-text padding media queries */
+/* Group heros-projects margin media queries */
+/* Group about-gallery margin media queries */
+/* Group personal-porfolio margin media queries */
+/* Group footer-section margin and padding media queries */
+
+/* 5. Add comments for clarity */
+/* Add section comments for major parts */
+
+/* Note: Apply these changes carefully to avoid overwriting existing styles */
