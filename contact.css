@@ -43,15 +43,13 @@ nav {
     width: 100%;
     height: 100px;
     position: fixed;
-    transition: background-color 1s ease;
-    background-color: rgba(0, 0, 0, 0.8);
-    
+    transition: 1s ease;
 }
 .white {
     top: 0;
-    z-index: 999;
+    background-color: #000000;
+    z-index: 999; 
 }
-
 /* Navbar Brand Logo */
 .navbar-brand label {
     color: #fff;
@@ -126,51 +124,6 @@ nav ul li a {
 }
 nav ul li a:hover {
     color: #d1002c;
-}
-
-.text-address, .text-phone {
-    display: flex; /* Align icon and text side by side */
-    align-items: center; /* Vertically align the icon and text */
-    margin-bottom: 20px; /* Add spacing between items */
-}
-
-.text-address .map, .text-phone .phone {
-    width: 50px;
-    height: 50px;
-    background-color: #d1002c; /* Red background for icons */
-    border-radius: 50%; /* Make the icon container circular */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 15px; /* Add spacing between icon and text */
-}
-
-.text-address .map span i, .text-phone .phone span i {
-    color: #fff; /* White icon color */
-    font-size: 20px; /* Adjust icon size */
-}
-
-.text-address .map-text, .text-phone .phone-text {
-    font-size: 14px;
-    color: #333; /* Text color */
-    line-height: 1.6; /* Adjust line height for better readability */
-}
-
-.text-address .map-text span, .text-phone .phone-text span {
-    font-weight: bold; /* Make the label bold */
-    color: #d1002c; /* Red color for labels */
-    display: block;
-    margin-bottom: 5px; /* Add spacing below the label */
-}
-
-.text-address .map-text p, .text-phone .phone-text a {
-    color: #666; /* Subtle text color for details */
-    text-decoration: none; /* Remove underline from links */
-    transition: color 0.3s ease; /* Smooth hover effect */
-}
-
-.text-address .map-text p:hover, .text-phone .phone-text a:hover {
-    color: #d1002c; /* Highlight text on hover */
 }
 
 /* Responsive Icon Part */
@@ -372,128 +325,6 @@ nav ul li a:hover {
     }
 }
 /* Form Part */
-
-
-.project-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center the section horizontally */
-    justify-content: center; /* Center the section vertically */
-    text-align: center;
-    padding: 50px 20px; /* Add padding for spacing */
-    background-color: #f9f9f9; /* Light background for contrast */
-}
-
-.project-text {
-    margin-bottom: 30px; /* Add spacing below the heading */
-}
-
-.project-text span {
-    font-size: 18px;
-    font-weight: 600;
-    color: #d1002c; /* Red color for emphasis */
-    display: block;
-    margin-bottom: 10px;
-}
-
-.project-text h2 {
-    font-size: 36px;
-    font-weight: 900;
-    color: #333;
-    margin-bottom: 15px;
-}
-
-.project-text p {
-    font-size: 16px;
-    color: #666;
-    line-height: 1.8;
-}
-
-.main {
-    display: flex;
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
-    justify-content: center; /* Center the form and text */
-    gap: 30px; /* Add spacing between form and text */
-    width: 100%;
-    max-width: 1200px; /* Limit the width of the container */
-    margin: 0 auto;
-}
-
-.form {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
-    padding: 30px;
-    width: 100%;
-    max-width: 600px; /* Limit the width of the form */
-}
-
-.form input,
-.form textarea {
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 14px;
-    color: #333;
-    background-color: #f9f9f9;
-}
-
-.form input::placeholder,
-.form textarea::placeholder {
-    color: #aaa; /* Placeholder text color */
-}
-
-.form textarea {
-    height: 150px; /* Set a fixed height for the textarea */
-    resize: none; /* Disable resizing */
-}
-
-.form-button a {
-    display: inline-block;
-    background-color: #d1002c; /* Red button background */
-    color: #fff;
-    padding: 12px 30px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
-    text-align: center;
-}
-
-.form-button a:hover {
-    background-color: #a00020; /* Darker red on hover */
-}
-
-.form-text {
-    display: flex;
-    flex-direction: column;
-    gap: 20px; /* Add spacing between contact details */
-    max-width: 400px; /* Limit the width of the contact details */
-}
-
-.text-address,
-.text-phone {
-    display: flex;
-    align-items: center; /* Align icon and text vertically */
-    gap: 15px; /* Add spacing between icon and text */
-}
-
-.text-address .map,
-.text-phone .phone {
-    width: 50px;
-    height: 50px;
-    background-color: #d1002c; /* Red background for icons */
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff; /* White icon color */
-    font-size: 20px;
-}
-
 .form {
     width: 600px;
     height: 450px;
@@ -728,23 +559,6 @@ nav ul li a:hover {
     font-size: 14px;
     padding: 16px 40px;
     border-radius: 3px;
-}
-.form-button {
-    margin-top: 20px; /* Add spacing above the button */
-    text-align: center; /* Center the button horizontally */
-}
-
-.form-button a {
-    background: #d1002c !important;
-    border: 1px solid #d1002c !important;
-    color: #fff !important;
-    text-decoration: none;
-    font-size: 14px;
-    padding: 16px 40px;
-    border-radius: 3px;
-    display: inline-block; /* Ensure the button stays inline */
-    width: auto; /* Prevent the button from stretching */
-    text-align: center; /* Center the text inside the button */
 }
 
 /* Form Text Part */
