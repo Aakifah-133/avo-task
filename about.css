@@ -43,16 +43,13 @@ nav {
     width: 100%;
     height: 100px;
     position: fixed;
-    transition: background-color 1s ease;
-    background-color: rgba(0, 0, 0, 0.8);
-    
+    transition: 1s ease;
 }
 .white {
     top: 0;
-    z-index: 999;
+    background-color: #000000;
+    z-index: 999; 
 }
-
-
 /* Navbar Brand Logo */
 .navbar-brand label {
     color: #fff;
@@ -127,50 +124,6 @@ nav ul li a {
 }
 nav ul li a:hover {
     color: #d1002c;
-}
-
-nav {
-    background-color: rgba(0, 0, 0, 0.8); /* Dark and transparent background */
-    position: fixed; /* Keep the navbar fixed at the top */
-    top: 0;
-    width: 100%;
-    z-index: 1000; /* Ensure it stays above other elements */
-    padding: 10px 20px; /* Add padding for spacing */
-    transition: background-color 0.3s ease; /* Smooth transition for background changes */
-}
-
-nav ul {
-    display: flex;
-    justify-content: flex-end; /* Align menu items to the right */
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff; /* White text for better contrast */
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 500;
-    transition: color 0.3s ease; /* Smooth transition for hover effect */
-}
-
-nav ul li a:hover {
-    color: #d1002c; /* Highlight color on hover */
-}
-
-nav .navbar-brand label {
-    color: #fff; /* White logo text */
-    font-size: 24px;
-    font-weight: bold;
-}
-
-nav.white {
-    background-color: rgba(0, 0, 0, 1); /* Fully opaque background when scrolled */
 }
 
 /* Responsive Icon Part */
@@ -522,8 +475,6 @@ nav.white {
     padding: 10px 14px;
     border-radius: 3px;
 }
-
-
 /* ------ Media Query ------ */
 @media screen and (max-width: 768px) {
     .avo-button {
@@ -541,25 +492,6 @@ nav.white {
         display: flex;
         flex-direction: column;
         margin-left: 20px;
-    }
-}
-
-.personal-porfolio {
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    flex-wrap: wrap; /* Allow wrapping for responsiveness */
-    margin: 0 auto; /* Center the section within its container */
-    text-align: center; /* Center-align text inside the section */
-    padding: 20px; /* Add padding for spacing */
-    width: 100%; /* Ensure it spans the full width */
-}
-
-/* Adjust for smaller screens */
-@media screen and (max-width: 768px) {
-    .personal-porfolio {
-        flex-direction: column; /* Stack items vertically */
-        padding: 10px; /* Reduce padding for smaller screens */
     }
 }
 .first-seo-text {
@@ -723,231 +655,6 @@ nav.white {
 }
 
                                  /* Client Say About Us Section */
-
-
-
-                                 .wrapper {
-                                    max-width: 1100px;
-                                    width: 100%;
-                                    position: relative;
-                                    margin: 0 auto;
-                                }
-
-                                #wraph2 {
-                                    text-align: center; /* Centers the text */
-                                    font-weight: bold; /* Makes the text bold */
-                                    font-size: 36px; /* Adjust font size as needed */
-                                    margin: 20px 0; /* Add spacing above and below */
-                                    color: #333; /* Optional: Adjust text color */
-                                }
-                                
-                                .wrapper i {
-                                    height: 50px;
-                                    width: 50px;
-                                    background: rgb(230, 0, 0);
-                                    text-align: center;
-                                    line-height: 50px;
-                                    border-radius: 50%;
-                                    cursor: pointer;
-                                    position: absolute;
-                                    top: 50%;
-                                    font-size: 1.25rem; /* Fixed typo: removed space */
-                                    transform: translateY(-50%);
-                                    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
-                                }
-                                .wrapper i:hover {
-                                    background: rgb(142, 10, 10); /* Optional: Add a darker red on hover */
-                                }
-                                
-                                .wrapper i:first-child {
-                                    left: -22px;
-                                }
-                                
-                                .wrapper i:last-child {
-                                    right: -22px;
-                                }
-                                
-                                .wrapper .carousel {
-                                    display: grid;
-                                    grid-auto-flow: column;
-                                    grid-auto-columns: calc((100% / 3) - 12px);
-                                    gap: 16px;
-                                    overflow-x: auto;
-                                    scroll-snap-type: x mandatory;
-                                    scroll-behavior: smooth;
-                                    scrollbar-width: none; /* Fixed property */
-                                }
-                                
-                                .carousel::-webkit-scrollbar {
-                                    display: none;
-                                }
-                                
-                                .carousel :where(.card, .img) {
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                }
-                                
-                                .carousel.dragging {
-                                    scroll-snap-type: none;
-                                    scroll-behavior: auto;
-                                }
-                                
-                                .carousel.no-transition {
-                                    scroll-behavior: auto;
-                                }
-                                
-                                .carousel.dragging .card {
-                                    cursor: grab;
-                                    user-select: none;
-                                }
-                                
-                                .carousel .card {
-                                    scroll-snap-align: start;
-                                    height: 340px;
-                                    list-style: none;
-                                    background: #fff;
-                                    border-radius: 8px;
-                                    display: flex;
-                                    cursor: pointer;
-                                    width: 98%;
-                                    padding-bottom: 15px;
-                                    align-items: center;
-                                    justify-content: center;
-                                    flex-direction: column;
-                                }
-                                
-                                .card .img {
-                                    background: green;
-                                    width: 145px;
-                                    height: 145px;
-                                    border-radius: 50%;
-                                }
-                                
-                                .card .img img {
-                                    width: 140px;
-                                    height: 140px;
-                                    object-fit: cover;
-                                    border-radius: 50%;
-                                    border: 4px solid #fff;
-                                }
-                                
-                                .card h2 {
-                                    font-weight: 500;
-                                    font-size: 1.56rem;
-                                    margin: 30px 0 5px;
-                                }
-                                
-                                .card span {
-                                    color: #6a6d78;
-                                    font-size: 1.31rem;
-                                }
-                                
-                                @media screen and (max-width: 900px) {
-                                    .wrapper .carousel {
-                                        grid-auto-columns: calc((100% / 2) - 9px);
-                                    }
-                                }
-                                
-                                @media screen and (max-width: 600px) {
-                                    .wrapper .carousel {
-                                        grid-auto-columns: 100%;
-                                    }
-                                }
-                                
-                                /* Client Section */
-                                .client-section {
-                                    width: 100%;
-                                    height: 850px;
-                                }
-                                
-                                /* Main Heading */
-                                .client-section h2 {
-                                    margin-top: 100px;
-                                    font-size: 36px;
-                                    font-weight: 900;
-                                    text-transform: uppercase;
-                                    margin-bottom: 0.5rem !important;
-                                    line-height: 1.5;
-                                    color: rgba(0, 0, 0, 0.8);
-                                    text-align: center;
-                                }
-                                
-                                @media screen and (max-width: 426px) {
-                                    .client-section h2 {
-                                        font-size: 28px;
-                                        font-weight: 700;
-                                    }
-                                }
-                                
-                                /* Pricing Section */
-                                .swiper-wrapper {
-                                    display: flex;
-                                    justify-content: center;
-                                    margin-left: 0; /* Removed unnecessary large margins */
-                                }
-                                
-                                @media screen and (max-width: 768px) {
-                                    .swiper-wrapper {
-                                        margin-left: 0; /* Adjusted for responsiveness */
-                                    }
-                                }
-                                
-                                /* Slider */
-                                .swiper-slide {
-                                    margin-top: 60px;
-                                    align-items: center;
-                                }
-                                
-                                /* First Swiper */
-                                .swiper-slide .first-swiper {
-                                    border: 1px solid #f3f3f3;
-                                    border-radius: 5px;
-                                    width: 303px;
-                                    height: 250px;
-                                    background: #f3f3f3;
-                                    padding: 10px 20px;
-                                    margin-bottom: 50px;
-                                }
-                                
-                                /* Slider Text */
-                                .slider-text p {
-                                    font-size: 16px;
-                                    line-height: 1.8;
-                                    font-weight: 400;
-                                    color: #a0a0b4;
-                                }
-                                
-                                /* Slider Person Information */
-                                .slide-person {
-                                    display: flex;
-                                }
-                                
-                                /* Person Image */
-                                .slider-person-image img {
-                                    width: 80px;
-                                    height: 80px;
-                                    border-radius: 50%;
-                                    margin-right: 20px;
-                                }
-                                
-                                /* Person Text */
-                                .slider-person-text {
-                                    padding-top: 10px;
-                                }
-                                
-                                .slider-person-text p {
-                                    font-weight: 600;
-                                    font-size: 18px;
-                                    margin-bottom: 5px;
-                                    color: #000000;
-                                    letter-spacing: 2px;
-                                }
-                                
-                                .slider-person-text span {
-                                    font-size: 16px;
-                                    color: #b3b3b3;
-                                }
  .client-section {
     width: 100%;
     height: 500px;
@@ -970,9 +677,6 @@ nav.white {
         font-weight: 700;
     }
 }
-
-
-
 /* Pricing Section */
 .swiper-wrapper {
     display: flex;
