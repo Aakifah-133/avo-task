@@ -3,8 +3,6 @@
     padding: 0;
 }
 
-
-  
 /* ------ Media Query ------ */
 @media (max-width: 2561px) {
     html,body {
@@ -45,9 +43,7 @@ nav {
     width: 100%;
     height: 100px;
     position: fixed;
-    transition: background-color 1s ease;
-    background-color: rgba(0, 0, 0, 0.8);
-    
+    transition: 1s ease;
 }
 .white {
     top: 0;
@@ -96,7 +92,6 @@ nav ul {
     float: right;
     margin-right: 220px;
     list-style-type: none;
-    transition: color 0.3s ease;
 }
 /* ------ Media Query ------ */
 @media screen and (min-width: 2000px) and (max-width: 2561px) {
@@ -117,7 +112,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
-    font-size: 13px
+    font-size: 13px;
     font-weight: 600;
     padding: 8px 16px;
     text-transform: uppercase;
@@ -129,6 +124,109 @@ nav ul li a {
 }
 nav ul li a:hover {
     color: #d1002c;
+}
+
+/* Responsive Icon Part */
+#checkbtn {
+    float: right;
+    line-height: 80px;
+    margin-right: 10px;
+    font-size: 30px;
+    color: #fff;
+    display: none
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 992px) {
+    #checkbtn {
+        line-height: 60px;
+    }
+}
+#check {
+    display: none;
+}
+#check:checked ~ ul {
+    top: 0;
+}
+/* ------ Media Query ------ */
+@media (max-width: 992px) {
+    nav {
+        background-color: #000000;
+        width: 100%;
+        height: 65px;
+        z-index: 999;
+    }
+    #checkbtn {
+        display: block;
+    }
+    nav ul {
+        width: 100%;
+        height: 200px;
+        background-color: #000000;
+        margin-top: 65px;
+        position: fixed;
+        top: -100%;
+        transition: .5s;
+    }
+    nav ul li {
+        display: block;
+        text-align: center;
+        line-height: 35px;
+        
+    }
+    nav ul li a {
+        font-size: 12px;
+    }
+}
+/* Heros Text Part */
+.heros-text {
+    padding-top: 420px;
+    padding-left: 180px;
+}
+/* ------ Media Query ------ */
+@media screen and (min-width: 2000px) and (max-width: 2561px) {
+    .heros-text {
+        padding-top: 300px;
+        padding-left: 650px;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 1024px) {
+    .heros-text {
+        padding-left: 50px;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 768px) {
+    .heros-text {
+        padding-left: 20px;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 426px) {
+    .heros-text {
+        padding-left: 20px;
+    }
+}
+.heros-text h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 800;
+    position: relative;
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 426px) {
+    .heros-text h1 {
+        padding-top: 50px;
+        font-size: 25px;
+        font-weight: 700;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 376px) {
+    .heros-text h1 {
+        padding-top: 120px;
+    }
 }
 
                                     /*  Our Work Section */
@@ -406,8 +504,6 @@ nav ul li a:hover {
         margin-left: 0px;
     }
 }
-
-
 /*  Work Section Bottom Waves Part */
 .work-bottom-waves {
     bottom: 0;
@@ -415,64 +511,6 @@ nav ul li a:hover {
     left: 0;
     rotate: 180deg;
     z-index: 0;
-}
-
-
-.our-work-section {
-    display: flex; /* Enable Flexbox */
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
-    justify-content: center; /* Center items vertically */
-    width: 100%;
-    height: auto; /* Adjust height dynamically */
-    margin: 0 auto; /* Center the section within its container */
-    background: #fff !important;
-    padding: 50px 20px; /* Add padding for spacing */
-    z-index: 0;
-    text-align: center; /* Center-align text */
-}
-
-/* Center the heading */
-.our-work-section h2 {
-    margin-top: 0;
-    font-size: 36px;
-    font-weight: 900;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-    line-height: 1.5;
-    color: rgba(0, 0, 0, 0.8);
-    text-align: center;
-}
-
-/* Center the portfolio items */
-.web-design {
-    display: flex;
-    flex-wrap: wrap; /* Allow wrapping for responsiveness */
-    justify-content: center; /* Center items horizontally */
-    gap: 20px; /* Add spacing between items */
-    margin-top: 50px;
-}
-
-/* Portfolio item styling */
-.web-design .web-image img {
-    width: 400px;
-    height: 550px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin: 10px;
-}
-
-/* Responsive Adjustments */
-@media screen and (max-width: 768px) {
-    .web-design {
-        flex-direction: column; /* Stack items vertically on smaller screens */
-        align-items: center;
-    }
-
-    .web-design .web-image img {
-        width: 100%; /* Make images responsive */
-        height: auto;
-    }
 }
 
                                            /* Footer Section */
@@ -502,7 +540,6 @@ nav ul li a:hover {
         margin-top: -20px;
     }
 }
-
 /* First Colums */
 .footer-section .first-text {
     float: left;
