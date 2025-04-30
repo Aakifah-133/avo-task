@@ -4,64 +4,74 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>home</title>
+   <!-- Swiper CDN -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+  <!-- External CSS File -->
   <link href="index.css" rel="stylesheet">
-  <script src="index.js"></script>
-  <!-- Swiper CSS -->
-
-</head>  
+  <!-- BootStrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Jquery CDN -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+  <!-- Font Icon CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.font-awesome.com/a076d05399.js"></script>
+</head>
 <body>
-<!-- Heros Section -->
-<section>
-  <div class="overlay">
-      <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319"><path fill="#fff" fill-opacity="1"
-      d="M0,192L720,256L1440,160L1440,320L720,320L0,320Z"></path></svg>
-      <nav class="white">
-          <input type="checkbox" id="check">
-          <label for="check" id="checkbtn"><i class="fas fa-bars"></i></label>
-          <a class="navbar-brand" href="index.html">
-              <label>A <span>V</span> O</label>
-          </a>
-          <ul>
-              <li class="active"><a href="index.html">Home</a></li>
-              <li><a href="./about.html">About</a></li>
-              <li><a href="./work.html">Work</a></li>
-              <li><a href="./blog.html">Blog</a></li>
-              <li><a href="./contact.html">Contact</a></li>
-          </ul>
-      </nav>
-      <div class="heros-text">
-          <h1>We Create <br>Modern & <br>Minimal Website</h1>
-          <p>A small river named Duden flows by their place and <br>supplies it with the necessary regelialia.</p>
-          <div class="button-wrapper">
-            <button id="playButton" class="video-trigger">
-                <div class="play-button">
-                    <div class="play-icon"></div>
-                </div>
-            </button> 
-        </div>
-      </div>
 
-      <!-- Heros Project Part -->
-      <div class="heros-projects">
+                                 <!-- Heros Section -->
+    <section>
+        <label class="overlay">
+          <!-- Heros Background Image Waves Part -->
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319"><path fill="#fff" fill-opacity="1"
+        d="M0,192L720,256L1440,160L1440,320L720,320L0,320Z"></path></svg>
+        <nav>
+          <!-- Navbar Icon -->
+        <input type="checkbox" id="check" name="" value="">
+        <label for="check" id="checkbtn"><i class="fas fa-bars"></i></label>
+        <!-- Navbar Logo -->
+        <a class="navbar-brand" href="index.html">
+            <label>a <span>v</span> o</label>
+        </a>
+        <!-- Navbar Icon -->
+        <ul>
+          <li class="active" ><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        </nav>
+        </label>
+        <!-- Heros Text Part -->
+        <div class="heros-text">
+          <h1>We Create <br>
+              Modern & <br>
+              Minimal Website</h1>
+          <p>A small river named Duden flows by their place and <br>
+             supplies it with the necessary regelialia.</p>
+          <!-- Button Part -->
+          <div class="heros-button">
+          <a href="#">Start Projects</a>
+          </div> 
+        </div>
+
+        <!-- Heros Project Part -->
+        <div class="heros-projects">
           <h4>400</h4>
           <span></span>
-          <p>More than a <br>hundred successful <br>projects</p>
-      </div>
-  </div>
-  
-  <div id="videoPopup" class="popup">
-    <div class="popup-content">
-        <span class="close-btn" id="closeBtn">&times;</span>
-        <iframe id="videoFrame" 
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-        </iframe>
-    </div>
-</div>
+          <p>More than a <br>
+             hundred successful <br>
+             projects</p>
+        </div>
+    </section>
 
-</section>
-
-   <!-- About Us Section -->
+                               <!-- About Us Section -->
     <div class="about-section">
       <h2>About Us</h2>
       <!-- Gallery Part -->
@@ -73,7 +83,7 @@
         </div>
         <!-- Second Image -->
         <div class="first-image">
-          <img style="margin-left: 50px;" src="./images/web-programming.png" alt="web-programming">
+          <img style="margin-left: 50px;" src="images/web-programming.png" alt="web-programming">
           <h3>Web Development</h3>
         </div>
         <!-- Thrid Image -->
@@ -97,7 +107,7 @@
       <!-- About Personal Portfolio -->
       <div class="personal-porfolio">
         <!-- Text Left Side -->
-        <div class="avo-text centered-text">
+        <div class="avo-text">
           <h3>Welcome to AVO A <br>
               Personal Porfolio <br>
               Web Agency</h3>
@@ -111,7 +121,7 @@
         </div>
         <!-- Image Left Side -->
         <div class="avo-image">
-          <img src="./images/download.jpeg" alt="about-image">
+          <img src="images/about.jpg.webp" alt="about-image">
         </div>
         <!-- Text Right Side -->
         <div class="avo-para">
@@ -168,7 +178,7 @@
       </div>
    </div>
 
-     <!-- Our Work Section -->
+                                   <!-- Our Work Section -->
     <!--  Work Section Top Waves Part -->  
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
     <path fill="#f3f3f3" fill-opacity="1" d="M0,256L720,96L1440,224L1440,320L720,320L0,320Z"></path></svg>
@@ -181,7 +191,7 @@
       <div class="web-design">
         <!-- Main Image -->
         <div class="web-image">
-          <img src="./images/images (7).jpeg" alt="work-1">
+          <img src="images/work-1.jpg.webp" alt="work-1">
         </div>
         <!-- Main Text -->
         <div class="web-text">
@@ -193,7 +203,7 @@
         <div class="web-person">
           <!-- Person Image -->
           <div class="person-image">
-          <img src="./images/images.jpeg" alt="person_1">
+          <img src="images/person_1.jpg.webp" alt="person_1">
           </div>
           <!-- Person Text -->
           <div class="person-text">
@@ -222,7 +232,7 @@
         <div class="web-person">
           <!-- Person Image -->
           <div class="person-image">
-          <img src="./images/images (1).jpeg" alt="person_2">
+          <img src="images/person_2.jpg.webp" alt="person_2">
           </div>
           <!-- Person Text -->
           <div class="person-text">
@@ -237,7 +247,7 @@
         </div>
          <!-- Main Image -->
         <div class="web-image">
-          <img src="./images/download (1).jpeg" alt="work-2">
+          <img src="images/work-2.jpg.webp" alt="work-2">
         </div>
       </div>
          </div>
@@ -246,7 +256,7 @@
        <div class="web-design">
         <!-- Main Image -->
         <div class="web-image">
-          <img src="./images/work-3.jpg.webp" alt="work-3">
+          <img src="images/work-3.jpg.webp" alt="work-3">
         </div>
         <!-- Main Text -->
         <div class="web-text">
@@ -258,7 +268,7 @@
         <div class="web-person">
           <!-- Person Image -->
           <div class="person-image">
-          <img src="./images/images (2).jpeg" alt="person_3">
+          <img src="images/person_3.jpg.webp" alt="person_3">
           </div>
           <!-- Person Text -->
           <div class="person-text">
@@ -287,7 +297,7 @@
        <div class="web-person">
          <!-- Person Image -->
          <div class="person-image">
-         <img src="./images/images (3).jpeg" alt="person_2">
+         <img src="images/person_2.jpg.webp" alt="person_2">
          </div>
          <!-- Person Text -->
          <div class="person-text">
@@ -302,7 +312,7 @@
        </div>
         <!-- Main Image -->
        <div class="web-image">
-         <img src="./images/images (8).jpeg" alt="work-4">
+         <img src="images/work-4.jpg.webp" alt="work-4">
        </div>
      </div>
       </div>
@@ -311,7 +321,7 @@
       <div class="web-design">
         <!-- Main Image -->
         <div class="web-image">
-          <img src="./images/images (5).jpeg" alt="work-5">
+          <img src="images/work-5.jpg.webp" alt="work-5">
         </div>
         <!-- Main Text -->
         <div class="web-text">
@@ -323,7 +333,7 @@
         <div class="web-person">
           <!-- Person Image -->
           <div class="person-image">
-          <img src="./images/images (4).jpeg" alt="person_2">
+          <img src="images/person_2.jpg.webp" alt="person_2">
           </div>
           <!-- Person Text -->
           <div class="person-text">
@@ -352,7 +362,7 @@
        <div class="web-person">
          <!-- Person Image -->
          <div class="person-image">
-         <img src="./images/images (6).jpeg" alt="person_2">
+         <img src="images/person_2.jpg.webp" alt="person_2">
          </div>
          <!-- Person Text -->
          <div class="person-text">
@@ -378,96 +388,161 @@
       <path fill="#f3f3f3" fill-opacity="1" d="M0,256L720,96L1440,224L1440,320L720,320L0,320Z"></path></svg>
 
                               <!-- Client Say About Us Section -->
-                               
-<!-- Client Say Top Waves Part -->
- 
-<div class="wrapper">
-  <h2 id="wraph2">Clients Says About Us?</h2>
-  <i id="left" class="fa-solid  fas fa-angle-left"></i>
-  <ul class="carousel">
-      <li class="card">
-          <div class="img"><img src=
-"./images/images (6).jpeg" 
-                                alt="" draggable="false"> </div>
-                                <div class="slider-person-text">
-                                  <p>Roger Scott</p>
-                                  <span>Marketing Manager</span>
-                                 </div>
-          <span><p>Far far away, behind the word <br>
-            mountains, far from the countries <br>
-            Vokalia and Consonantia, there live the blind texts.</p></span>
-      </li>
-      <li class="card">
-          <div class="img"><img src=
-"./images/images (3).jpeg" 
-                                alt="" draggable="false"> </div>
-                                <div class="slider-person-text">
-                                  <p>Roger Scott</p>
-                                  <span>Marketing Manager</span>
-                                 </div>
-          <span><p>Far far away, behind the word <br>
-            mountains, far from the countries <br>
-            Vokalia and Consonantia, there live the blind texts.</p></span>
-      </li>
-      <li class="card">
-          <div class="img"><img src=
-"images/person_2.jpg.webp" 
-                                alt="" draggable="false"> </div>
-                                <div class="slider-person-text">
-                                  <p>Roger Scott</p>
-                                  <span>Marketing Manager</span>
-                                 </div>
-          <span><p>Far far away, behind the word <br>
-            mountains, far from the countries <br>
-            Vokalia and Consonantia, there live the blind texts.</p></span>
-      </li>
-      <li class="card">
-          <div class="img"><img src=
-"images/person_3.jpg.webp" 
-                                alt="" draggable="false"> </div>
-                                <div class="slider-person-text">
-                                  <p>Roger Scott</p>
-                                  <span>Marketing Manager</span>
-                                 </div>
-          <span><p>Far far away, behind the word <br>
-            mountains, far from the countries <br>
-            Vokalia and Consonantia, there live the blind texts.</p></span>
-      </li>
-      <li class="card">
-          <div class="img"><img src=
-"images/person_1.jpg.webp" 
-                                alt="" draggable="false"> </div>
-                                <div class="slider-person-text">
-                                  <p>Roger Scott</p>
-                                  <span>Marketing Manager</span>
-                                 </div>
-          <span><p>Far far away, behind the word 
-            mountains, far from the countries 
-            Vokalia and Consonantia, there live the blind texts.</p></span>
-      </li>
-      <li class="card">
-          <div class="img"><img src=
-"images/person_2.jpg.webp" 
-                                alt="" draggable="false"> </div>
-                                <div class="slider-person-text">
-                                  <p>Roger Scott</p>
-                                  <span>Marketing Manager</span>
-                                 </div>
-          <span><p>Far far away, behind the word 
-            mountains, far from the countries 
-            Vokalia and Consonantia, there live the blind texts.</p></span>
-      </li>
-  </ul>
-  <i id="right" class="fa-solid fas fa-angle-right"></i>
-</div>
+      <div class="client-section">
+        <!-- Main Heading -->
+        <h2>Clients Says About Us?</h2>
 
+         <!-- Pricing Section -->
+         <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
 
+            <!-- First Swiper -->
+           <div class="swiper-slide">
+            <div class="first-swiper">
+              <!-- Slider Text -->
+              <div class="slider-text">
+                <p>Far far away, behind the word <br>
+                   mountains, far from the countries <br>
+                   Vokalia and Consonantia, there live the blind texts.</p>
+              </div>
+              <!-- Slider Person Information -->
+              <div class="slide-person">
+                <!-- Person Image -->
+                <div class="slider-person-image">
+                 <img src="images/person_2.jpg.webp" alt="person_2">
+                </div>
+                <!-- Person Text -->
+                 <div class="slider-person-text">
+                  <p>Roger Scott</p>
+                  <span>Marketing Manager</span>
+                 </div>
+              </div>
+            </div>
+           </div>
 
+           <!-- Second Swiper -->
+           <div class="swiper-slide">
+            <div class="first-swiper">
+               <!-- Slider Text -->
+              <div class="slider-text">
+                <p>Far far away, behind the word <br>
+                   mountains, far from the countries <br>
+                   Vokalia and Consonantia, there live the blind texts.</p>
+              </div>
+               <!-- Slider Person Information -->
+              <div class="slide-person">
+                <!-- Person Image -->
+                <div class="slider-person-image">
+                 <img src="images/person_1.jpg.webp" alt="person_1">
+                </div>
+                <!-- Person Text -->
+                 <div class="slider-person-text">
+                  <p>Roger Scott</p>
+                  <span>Marketing Manager</span>
+                 </div>
+              </div>
+            </div>
+           </div>
 
-<!--?xml version="1.0" encoding="UTF-8"?-->
- 
- 
+            <!-- Third Swiper -->
+           <div class="swiper-slide">
+            <div class="first-swiper">
+               <!-- Slider Text -->
+              <div class="slider-text">
+                <p>Far far away, behind the word <br>
+                   mountains, far from the countries <br>
+                   Vokalia and Consonantia, there live the blind texts.</p>
+              </div>
+               <!-- Slider Person Information -->
+              <div class="slide-person">
+                <!-- Person Image -->
+                <div class="slider-person-image">
+                 <img src="images/person_2.jpg.webp" alt="person_2">
+                </div>
+                <!-- Person Text -->
+                 <div class="slider-person-text">
+                  <p>Roger Scott</p>
+                  <span>Marketing Manager</span>
+                 </div>
+              </div>
+            </div>
+           </div>
 
+             <!-- Fourth Swiper -->
+             <div class="swiper-slide">
+              <div class="first-swiper">
+                 <!-- Slider Text -->
+                <div class="slider-text">
+                  <p>Far far away, behind the word <br>
+                     mountains, far from the countries <br>
+                     Vokalia and Consonantia, there live the blind texts.</p>
+                </div>
+                 <!-- Slider Person Information -->
+                <div class="slide-person">
+                  <!-- Person Image -->
+                  <div class="slider-person-image">
+                   <img src="images/person_3.jpg.webp" alt="person_3">
+                  </div>
+                  <!-- Person Text -->
+                   <div class="slider-person-text">
+                    <p>Roger Scott</p>
+                    <span>Marketing Manager</span>
+                   </div>
+                </div>
+              </div>
+             </div>
+
+              <!-- Fifth Swiper -->
+              <div class="swiper-slide">
+                <div class="first-swiper">
+                   <!-- Slider Text -->
+                  <div class="slider-text">
+                    <p>Far far away, behind the word <br>
+                       mountains, far from the countries <br>
+                       Vokalia and Consonantia, there live the blind texts.</p>
+                  </div>
+                   <!-- Slider Person Information -->
+                  <div class="slide-person">
+                    <!-- Person Image -->
+                    <div class="slider-person-image">
+                     <img src="images/person_1.jpg.webp" alt="person_1">
+                    </div>
+                    <!-- Person Text -->
+                     <div class="slider-person-text">
+                      <p>Roger Scott</p>
+                      <span>Marketing Manager</span>
+                     </div>
+                  </div>
+                </div>
+               </div>
+
+                <!-- Sixth Swiper -->
+              <div class="swiper-slide">
+                <div class="first-swiper">
+                   <!-- Slider Text -->
+                  <div class="slider-text">
+                    <p>Far far away, behind the word <br>
+                       mountains, far from the countries <br>
+                       Vokalia and Consonantia, there live the blind texts.</p>
+                  </div>
+                   <!-- Slider Person Information -->
+                  <div class="slide-person">
+                    <!-- Person Image -->
+                    <div class="slider-person-image">
+                     <img src="images/person_2.jpg.webp" alt="person_2">
+                    </div>
+                    <!-- Person Text -->
+                     <div class="slider-person-text">
+                      <p>Roger Scott</p>
+                      <span>Marketing Manager</span>
+                     </div>
+                  </div>
+                </div>
+               </div>
+               
+          </div>
+         <div class="swiper-pagination"></div>
+       </div>
 
        <!-- About Us Background Image -->
       <div class="about-bg-image">
@@ -647,17 +722,24 @@
               <li><a href="#">Careers</a></li>
           </ul>
         </div>
-        <div class="footer-bottom">
-          <p>Copyright &copy; 2025 All rights reserved | This template is made with <i class="fa fa-heart"></i> by Colorlib</p>
-          <div class="social-icons">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-              <a href="#"><i class="fab fa-youtube"></i></a>
-          </div>
+
       </div>
     </div>
-   
+
+    <script>
+      $(window).on('scroll',function() {
+        if ($(window).scrollTop()) {
+          $('nav').addClass('white');
+        }
+        else {
+          $('nav').removeClass('white');
+        }
+      }) 
+    </script>
+
+    <!-- JavaScript Swiper CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="index.js"></script>
+
 </body>
 </html>
